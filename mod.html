@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <title>Mod</title>
+        <link rel="stylesheet" href="styles/mod.css" />
+    </head>
+    <body>
+        <div class="row">
+            <header>
+                <img src="img/logo3.png" alt="logo" class="logo"/>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="user.html" class="navbar-link">Home</a>
+                        </li>
+                        <li><a href="search_plan.html" class="navbar-link">Plan</a>
+                        </li>
+                        <li><a href="search_nutri.html" class="navbar-link">Nutritionist</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="basic-container my_plans">
+                    <h2>Selected user plans</h2>
+                    <div>
+                        <div class="basic-container whole-plan my-whole-plan">
+                            <div class="image-container">
+                                <img src="img/plan-gen.png" class="my-image" onclick="myPlanLook()" />
+                                <div style="width: 85%; text-align: left; padding-right: 10px; padding-left: 10px">
+                                    <h3>Plan</h3>
+
+                                    <span class="key-word">Calorie deficit</span>
+                                    <span class="key-word">glutten free</span>
+                                    <span class="key-word">vegan</span>
+                                </div>
+                                <div class="card-body my-card-lay">
+                                    <div class="dropdown ms-auto">
+                                        <i class="bx bx-dots-vertical-rounded" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                        <ul class="dropdown-menu">                                            
+                                            <li>
+                                                <span class="dropdown-item"> <i class="bx bxs-trash"></i> Delete </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="basic-container whole-plan my-whole-plan">
+                                <div class="image-container">
+                                    <img src="img/plan-gen.png" class="my-image" onclick="myPlanLook()" />
+                                    <div style="width: 85%; text-align: left; padding-right: 10px; padding-left: 10px">
+                                        <h3 style="margin-bottom: 15px">30-DAY KETO MEAL PLAN FOR BEGINERS</h3>
+                                        <span class="key-word">Keto diet</span>
+                                        <span class="key-word">Low calorie</span>
+                                    </div>
+
+                                    <div class="card-body my-card-lay">
+                                        <div class="dropdown ms-auto">
+                                            <i class="bx bx-dots-vertical-rounded" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                            <ul class="dropdown-menu">                                                
+                                                <li>
+                                                    <span class="dropdown-item"> <i class="bx bxs-trash"></i> Delete </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark bg-opacity-25 col-md-6 comments">
+                <div style="padding: 20px; width: 100%;">                    
+                    <div style="position: relative; width: 100%; padding-top: 40px;">
+                        <div class="form-box login">
+                            <div class="input-box animation" style="margin-bottom: 20px">
+                                <input type="text" required id="comment-input" style="color: #1abc9c;">
+                                <label>Username</label>
+                                <i class="bx bx-user post-comment" id="post-button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="comment-section">                    
+                    <div class="comment sb2">
+                        <input type="checkbox">
+                        <h6><b>User</b></h6>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fuga.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="basic-container">
+                    <h1>User</h1>
+                    <div class="radio-buttons">
+                        <div class="form-check">
+                            <input id="7" type="radio" name="period" class="form-check-input">
+                            <label for="7" class="form-check-label">7 days</label> 
+                        </div>                   
+                        <div class="form-check">
+                            <input id="14" type="radio" name="period" class="form-check-input">
+                            <label for="14" class="form-check-label">14 days</label>    
+                        </div>             
+                        <div class="form-check">
+                            <input id="30" type="radio" name="period" class="form-check-input">
+                            <label for="30" class="form-check-label">30 days</label>
+                        </div>                    
+                        <div class="form-check">
+                            <input id="forever" type="radio" name="period" class="form-check-input">
+                            <label for="forever" class="form-check-label">Forever</label> 
+                        </div>
+                    </div>
+                    <button class="my-btn btn-green">Suspend</button>
+                    <button class="my-btn btn-green">Delete selected comments</button>                             
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

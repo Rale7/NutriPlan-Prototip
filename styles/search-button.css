@@ -1,0 +1,12 @@
+.search-button {
+    background-color: #1abc9c;
+    border-top-style: solid;
+    border-color: #1abc9c;
+    margin-left: -25px !important;
+}
+
+.search-button:active,
+.search-button:hover {
+    background-color: #159d82 !important;
+    border-color: #159d82 !important;
+}

@@ -1,0 +1,25 @@
+@import url("my-input.css");
+@import url("comments.css");
+@import url("common.css");
+
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;    
+}
+.my-image {
+    width: 15%;
+    height: auto;
+  }
+  
+  .image-text-cont {
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    height: 103px;
+  }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Nutri profile</title>
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="styles/nutri.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="row">
+            <header>
+                <img src="img/logo3.png" alt="logo" class="logo"/>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="user.html" class="navbar-link">Home</a>
+                        </li>
+                        <li><a href="search_plan.html" class="navbar-link">Plan</a>
+                        </li>
+                        <li><a href="search_nutri.html" class="navbar-link">Nutritionist</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 vh-100">
+                <div class="basic-container">
+                    <img src="img/profile.jpg" class="rounded-circle" width="100%"/>
+                    <h2 class="ps-2">User</h2>
+                    <h4 class="text-muted">expert nutritionist</h4>
+                    <div style="text-align: center">
+                        E-mail: johns@gmail.com <br/>
+                        Phone: +381 60 1234 567
+                    </div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5"/>
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4"/>
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3"/>
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2"/>
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1"/>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                </div>
+                <div class="basic-container">
+                    <button class="my-btn btn-green" onclick="gotoForm()">Order form</button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="basic-container">
+                    <h3 style="border-bottom: 1px solid #f0f0f0">Make your diet your most powerful health weapon!</h3>
+                    <p>
+                        Are you tired of struggling with your diet and feeling overwhelmed by conflicting nutrition advice? I understand the
+                        challenges you face on your journey to better health, and we're here to guide you every step of the way.<br/>
+                        I am dedicated to help you achieve your health and wellness goals through personalized nutrition plans tailored to
+                        your unique needs and lifestyle. Whether you're looking to lose weight, manage a health condition, improve your
+                        energy levels, or simply adopt healthier eating habits, I'm here to provide the support and guidance you need to
+                        succeed. </p>
+                </div>
+                <div class="basic-container">
+                    <div class="row">
+                        <h3>My plans</h3>
+                        <div class="card m-3 p-3 w-25">
+                            <img src="img/plan-gen.png" class="my-image"/>
+                            <div class="card-body card-body-center">
+                                <h5 class="card-title">Vegan diet plan</h5>
+                                <p class="card-text">Rating: 4.1/5</p><a href="#" class="btn btn-primary">Take a plan</a>
+                            </div>
+                        </div>
+                        <div class="card m-3 p-3 w-25">
+                            <img src="img/plan-gen.png" class="my-image"/>
+                            <div class="card-body card-body-text">
+                                <h5 class="card-title">A varied diet plan</h5>
+                                <p class="card-text">Rating: 4.5/5</p><a href="#" class="btn btn-primary">Take a plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark bg-opacity-25 col-md-4 comments">
+                <div style="padding: 20px; width: 100%;">
+                    <h3 style="margin-top: 10px; margin-bottom: 30px">Comments</h3>
+                    <div style="position: relative; width: 100%">
+                        <div class="form-box login">
+                            <div class="input-box animation" style="margin-bottom: 20px">
+                                <input type="text" required id="comment-input" style="color: #1abc9c;">
+                                <label>Comment</label>
+                                <i class="bx bx-comment-dots post-comment" id="post-button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="comment-section">
+                    <div class="comment sb2">
+                        <h6><b>User</b></h6>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fuga.
+                    </div>
+                </div>
+            </div>
+            <script src="scripts/commenting.js"></script>
+        </div>
+        <div class="container"></div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="scripts/nutri.js"></script>
+    </body>
+</html>

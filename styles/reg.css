@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --color1: #e67e22;
+    --color2: #00B69A;
+    --color3: #f1c40f;
+    --color4_yt_background: #081b29;
+    --color5: #e74c3c;
+    --blackish: #17202a;
+    --color6: #ff824d;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebf5fb;
+}
+
+.wrapper {
+    position: relative;
+    width: 850px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid var(--blackish);
+    overflow: hidden;
+    /*box-shadow: 0 0 25px var(--color1);*/
+
+    background-color: #fef5e7;
+    border-radius: 20px;
+}
+.wrapper .form-box.login {
+    left: 0;
+    padding: 0 60px 0 40px;
+    display: none;
+}
+
+.wrapper .form-box.login .animation {
+    transform: translateX(0);
+    transition: 0.7s ease;
+}
+
+.wrapper.active .form-box.login .animation {
+    transform: translateX(-120%);
+}
+
+.wrapper .form-box.register {
+    right: 0;
+    padding: 0 40px 0 60px;
+}
+
+.wrapper .form-box {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+.form-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    transition: 0.5s;
+
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding-right: 23px;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-bottom-color: var(--color1);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+    color: var(--color1);
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #fff;
+    transition: 0.5s;
+}
+.input-box input:focus ~ i,
+.input-box input:valid ~ i {
+    color: var(--color1);
+}
+
+.arr_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    position: relative;
+    width: 50%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid var(--color1);
+    outline: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--blackish);
+
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+    background: var(--color1);
+    margin-top: 30px;
+}
+
+.form-box .logreg-link {
+    font-size: 14.5px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.logreg-link p a {
+    color: var(--color1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logreg-link p a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .info-text {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .info-text.login {
+    right: 0;
+    text-align: right;
+    padding: 0 40px 60px 150px;
+}
+
+.wrapper .info-text.register {
+    left: 0;
+    text-align: left;
+    padding: 0 150px 60px 40px;
+    display: none;
+}
+
+.info-text h2 {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.info-text p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.wrapper .bg-animate {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 850px;
+    height: 600px;
+    background: linear-gradient(10deg, #081b29, var(--color1));
+    border: 3px solid var(--color1);
+    /*transform: rotate(10deg) skewY(40deg);*/
+    transform: rotate(0) skewY(0);
+    transform-origin: bottom right;
+}
+.wrapper .bg-animate2 {
+    position: absolute;
+    top: 100%;
+    left: 250px;
+    width: 850px;
+    height: 700px;
+    background: #081b29;
+    border-top: 3px solid var(--color1);
+    transform: rotate(-9deg) skewY(-47deg);
+
+    transform-origin: bottom left;
+}
+
+.genders {
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.users {
+    font-size: 20px;
+}
+
+.form-box .fp {
+    font-size: 14.5px;
+    color: var(--color1);
+    text-align: left;
+    margin-top: 5px;
+}
+.fp p a {
+    color: var(--color1);
+    text-decoration: none;
+    font-size: small;
+    font-weight: 500;
+}
+
+.fp p a:hover {
+    text-decoration: underline;
+    color: var(--color1);
+}

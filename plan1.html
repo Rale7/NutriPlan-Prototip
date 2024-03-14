@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Plan search</title>
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="styles/plan-view.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="row">
+            <header>
+                <img src="img/logo3.png" alt="logo" class="logo"/>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="user.html" class="navbar-link">Home</a>
+                        </li>
+                        <li><a href="search_plan.html" class="navbar-link">Plan</a>
+                        </li>
+                        <li><a href="search_nutri.html" class="navbar-link">Nutritionist</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="row">
+            <div class="col-sm-0 col-md-1"></div>
+            <div class="col-sm-3 col-md-2 vh-100">
+                <div class="basic-container">
+                    <img src="img/plan-gen.png" width="100%"/>
+                    <h2 class="ps-2" style="text-align: center">Vegan diet plan</h2>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5"/>
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4"/>
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3"/>
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2"/>
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1"/>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                </div>
+                <div class="basic-container">
+                    <div class="fcp-content">
+                        <h5 class="plan-info">&#128198; days</h5>
+                        <div style="text-align: right">30</div>
+                    </div>
+                    <div class="fcp-content">
+                        <h5 class="plan-info">&#128065; views</h5>
+                        <div style="text-align: right">20</div>
+                    </div>
+                    <div class="fcp-content">
+                        <h5 class="plan-info">&#128229; orders</h5>
+                        <div style="text-align: right">2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+                <div class="basic-container">
+                    <div style="width: 100%">
+                        <h3 style="border-bottom: 1px solid #f0f0f0">Short description</h3>
+                    </div>
+                    <p>
+                        A vegan diet plan is centered around plant-based foods and excludes all animal products, including meat, dairy,
+                        eggs, and honey. Instead, it focuses on fruits, vegetables, grains, legumes, nuts, seeds, and plant-based
+                        alternatives.<br/><br/>
+                        A balanced vegan diet includes a variety of foods to ensure adequate intake of essential nutrients such as protein,
+                        iron, calcium, vitamin B12, omega-3 fatty acids, and vitamin D. Plant-based protein sources include beans, lentils,
+                        tofu, tempeh, nuts, seeds, and whole grains. </p>
+                </div>
+                <div class="basic-container">
+                    <div style="width: 100%">
+                        <button class="my-btn btn-green">Save plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark bg-opacity-25 col-md-4 comments">
+                <div style="padding: 20px; width: 100%;">
+                    <h3 style="margin-top: 10px; margin-bottom: 30px">Comments</h3>
+                    <div style="position: relative; width: 100%">
+                        <div class="form-box login">
+                            <div class="input-box animation" style="margin-bottom: 20px">
+                                <input type="text" required id="comment-input" style="color: #1abc9c;">
+                                <label>Comment</label>
+                                <i class="bx bx-comment-dots post-comment" id="post-button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="comment-section">
+                    <div class="comment sb2">
+                        <h6><b>User</b></h6>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fuga.
+                    </div>
+                </div>
+            </div>
+            <script src="scripts/commenting.js"></script>
+        </div>
+        <div class="container"></div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="pgia/lib/pgia.js"></script>
+    </body>
+</html>

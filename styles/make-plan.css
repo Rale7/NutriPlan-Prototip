@@ -1,0 +1,86 @@
+@import url("common.css");
+@import url("food-timeline.css");
+@import url("search-button.css");
+@import url("my-input.css");
+
+.checkbox-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-checkbox {
+    border-style: none;
+}
+
+.food-checkbox input[type="checkbox"]:checked {
+    background-color: #1abc9c;
+}
+
+food-item {
+    list-style-type: none;
+}
+
+.food-list {
+    list-style-type: none;
+}
+
+.food-drag {
+    font-size: 68px;
+    cursor: pointer;
+}
+
+.day-button {
+    width: 10%;
+    height: 10%;
+    font-weight: bold;
+    margin: 3px;
+    background-color: #1abc9c !important;
+    vertical-align: middle;
+    aspect-ratio: 1 / 1;
+    border: none;
+    font-size: 30px;
+    overflow: hidden;
+
+    @media (max-width: 1350px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 13px; /* Adjust font size for even smaller screens */
+    }
+}
+
+.day-button:hover {
+    background-color: #1abc9c !important;
+    transform: scale(1.05);
+}
+.day-button:focus,
+.day-button:active {
+    background-color: #1abc9c !important;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-drax-text {
+    font-size: 48px;
+}
+
+.food-drag-text {
+    font-size: 48px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+body {
+    background-color: #f0f0f0;
+}

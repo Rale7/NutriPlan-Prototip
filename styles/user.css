@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("common.css");
+@import url("progress-bars.css");
+@import url("my-input.css");
+
+:root {
+  --color1: #e67e22;
+  --color2: #28b463;
+  --color3: #f1c40f;
+  --color4_yt_background: #081b29;
+  --color5: #e74c3c;
+  --blackish: #17202a;
+  --color6: #2e86c1;
+  --color7: #ff9900;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+}
+
+.animation {
+  animation: fillProgress 2s ease forwards;
+}
+
+.progress_div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.my-image {
+  width: 15%;
+  height: auto;
+}
+
+.image-text-cont {
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  height: 103px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffffff;
+
+}
+
+
+.save_btn{
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.my-card-lay {
+  height: 100%;
+}

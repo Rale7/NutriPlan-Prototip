@@ -1,0 +1,37 @@
+@import url("common.css");
+@import url("search-button.css");
+@import url("my-input.css");
+
+body {
+    background-color: #f0f0f0;
+}
+
+.no-star {
+    color: #ccc;
+    font-size: 30px;
+}
+
+.star {
+    color: #fffb00;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
